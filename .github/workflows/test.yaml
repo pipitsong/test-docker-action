@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello Action
         id: hello
-        uses: pipitsong/dcokertest-action@v1
+        uses: pipitsong/dcokertest-action@58fbc966f3aa60cc9dab665615e12248609d9323
         with:
           who-to-greet: 'Ahmmad'
       - name: Get Output
