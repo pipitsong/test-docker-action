@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  hello_worlds:
+    runs-on: ubuntu-latest
+    name: A job for test
+    steps:
+      - name: Hello Action
+        id: hello
+        uses: pipitsong/dcokertest-action
+        with:
+          who-to-greet: 'Ahmmad'
+      - name: Get Output
+        run: echo "${{ steps.hello.outputs.time }}"
+
